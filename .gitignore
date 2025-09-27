@@ -1,0 +1,10 @@
+# Build files
+/build
+*.bin
+*.elf
+*.hex
+
+# Arduino/PlatformIO IDE files
+/.vscode
+/.idea
+*.swp
