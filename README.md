@@ -1,6 +1,6 @@
 # 🌞 ESP32 Solar Tracker with Wind Safety & Deep Sleep
 
-This project implements a solar reflector/sun tracker system using the ESP32 microcontroller, designed to maximize energy efficiency and protect hardware in harsh conditions. The firmware leverages deep sleep mode to conserve power, periodically waking up to track the sun’s position using photodiodes and controlling stepper motors via DM556 drivers.
+    * This project implements a solar reflector/sun tracker system using the ESP32 microcontroller, designed to maximize energy efficiency and protect hardware in harsh conditions. The firmware leverages deep sleep mode to conserve power, periodically waking up to track the sun’s position using photodiodes and controlling stepper motors via DM556 drivers.
 
 ## ✨ Features
 
