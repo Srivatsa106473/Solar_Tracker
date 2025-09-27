@@ -1,28 +1,28 @@
-###🌞 ESP32 Solar Tracker with Wind Safety & Deep Sleep
+### 🌞 ESP32 Solar Tracker with Wind Safety & Deep Sleep
 
 This project implements a solar reflector/sun tracker system using the ESP32 microcontroller, designed to maximize energy efficiency and protect hardware in harsh conditions. The firmware leverages deep sleep mode to conserve power, periodically waking up to track the sun’s position using photodiodes and controlling stepper motors via DM556 drivers.
 
-###✨ Features
+### ✨ Features
 
-##Efficient Sun Tracking
+## Efficient Sun Tracking
 
 Uses three photodiodes (left, center, right) to detect light intensity.
 
 Adjusts reflector position every 5 minutes during the day for optimal alignment.
 
-##Deep Sleep Power Management
+## Deep Sleep Power Management
 
 ESP32 sleeps for 5 minutes between daytime adjustments.
 
 At night, the system sleeps for 11 hours, minimizing energy usage.
 
-##Wind Safety Mechanism
+## Wind Safety Mechanism
 
 Reads real-time wind speed from an anemometer.
 
 If wind speed exceeds the defined cutoff (e.g., 10 m/s), the tracker returns safely to the zero position to prevent structural damage.
 
-##Stepper Motor Control
+## Stepper Motor Control
 
 Dual motors controlled with DM556 drivers.
 
@@ -30,13 +30,13 @@ Adjustable step size, direction, and speed with STEP_DELAY and MOVE_STEPS.
 
 Position tracking retained across deep sleep cycles with RTC memory.
 
-##Scalable & Customizable
+## Scalable & Customizable
 
 Thresholds (light, wind, step size, timing) can be easily tuned for your environment.
 
 Well-documented code for quick modifications and debugging.
 
-###⚙️ Hardware Requirements
+### ⚙️ Hardware Requirements
 
 ESP32 development board
 
@@ -48,7 +48,7 @@ Anemometer (wind speed sensor, analog output)
 
 Power supply capable of handling motor driver and ESP32
 
-###🛠️ Code Highlights
+### 🛠️ Code Highlights
 
 Sun tracking logic using comparative light values from left, center, right sensors.
 
@@ -58,7 +58,7 @@ Motor safety & return-to-zero function to reset system when needed.
 
 RTC memory variables retain motor position across deep sleep cycles.
 
-###🚀 Usage
+### 🚀 Usage
 
 Clone the repository:
 
@@ -74,7 +74,7 @@ Upload to ESP32 and connect hardware.
 
 Monitor the system via Serial Monitor (115200 baud).
 
-###📝 Example Behavior
+### 📝 Example Behavior
 
 Daytime → ESP32 wakes up every 5 min, checks light sensors, adjusts motors if needed.
 
@@ -82,7 +82,7 @@ High wind detected → Motors return to zero (safe position), system halts movem
 
 Nighttime → ESP32 sleeps for 11 hours until sunrise.
 
-###📌 Applications
+### 📌 Applications
 
 Solar reflectors
 
