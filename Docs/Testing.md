@@ -6,10 +6,12 @@ Verified reflector moves toward higher light intensity.
 
 ## Wind Safety Test
 
-Simulated high wind.
-Reflector moved to safe position.
+Not implemented at Field. Only UNit Testing was done with motor and Anemometer.
 
 ## Continuous Operation
 
 System tested for extended duration.
 Stable operation observed.
+
+## Full Functionality Test
+Not Completed
