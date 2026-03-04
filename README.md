@@ -2,52 +2,36 @@
 
 ## 📌 Overview
 
-Livint Solar is an ESP32-based intelligent solar reflector control system.
+This project is a microcontroller-based solar reflector control system.
 
 The system:
 
-- Tracks sunlight
-- Controls stepper motor for reflector positioning
-- Monitors environmental conditions
-- Communicates over Wi-Fi
-- Implements wind safety protection
+- Detects sunlight direction using LDR sensors
+- Adjusts reflector position using stepper motor
+- Monitors temperature and humidity (DHT)
+- Detects wind speed for safety positioning
 
-Designed for autonomous solar optimization.
+No wireless communication is implemented.
 
 ---
 
 ## ☀️ Features
 
-- Automatic solar tracking
+- Automatic light tracking
 - Stepper motor control
-- Light intensity sensing
-- DHT-based temperature & humidity monitoring
-- Wind speed safety detection
-- Wi-Fi connectivity
-- Real-time control logic
-- Embedded power management
+- Wind safety mechanism
+- Environmental monitoring
+- Autonomous operation
 
 ---
 
 ## 🧩 Hardware Used
 
 - ESP32
-- Stepper Motor
-- Light Sensors (LDR)
-- DHT11 Sensor
-- Wind Speed Sensor
-- LTO Battery System
-- Motor Driver Module
-
----
-
-## 📁 Folder Structure
-
-| Folder | Description |
-|--------|-------------|
-| `src/` | Main firmware |
-| `docs/` | Documentation |
-| `assets/` | Images & diagrams |
+- 2x LDR sensors
+- Stepper motor + driver
+- DHT sensor
+- Wind speed sensor
 
 ---
 
@@ -61,5 +45,4 @@ Designed for autonomous solar optimization.
 ---
 
 ## 👨‍💻 Author
-
 Sarath Chandra D
