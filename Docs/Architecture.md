@@ -1,6 +1,6 @@
 # System Architecture
 
-Sunlight → LDR Sensors → ESP32 → Stepper Motor → Reflector
+Sunlight → LDR Sensors → ESP32 → Motor → Reflector
 
 Wind Sensor → ESP32 → Safety Override
 
