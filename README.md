@@ -7,7 +7,7 @@ This project is a microcontroller-based solar reflector control system.
 The system:
 
 - Detects sunlight direction using LDR sensors
-- Adjusts reflector position using stepper motor
+- Adjusts reflector position using planetary Gear motor
 - Monitors temperature and humidity (DHT)
 - Detects wind speed for safety positioning
 
@@ -18,7 +18,7 @@ No wireless communication is implemented.
 ## ☀️ Features
 
 - Automatic light tracking
-- Stepper motor control
+- Motor control
 - Wind safety mechanism
 - Environmental monitoring
 - Autonomous operation
@@ -29,7 +29,7 @@ No wireless communication is implemented.
 
 - ESP32
 - 2x LDR sensors
-- Stepper motor + driver
+- Motor + driver
 - DHT sensor
 - Wind speed sensor
 
